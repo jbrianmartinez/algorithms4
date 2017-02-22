@@ -1,9 +1,5 @@
 ﻿using Algorithms4;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace algs4TestClient
 {
@@ -13,12 +9,13 @@ namespace algs4TestClient
         {
             try
             {
-                double[] rndNums = RandomSeq.GenerateRandomSequence(5, 10.0, 11.0);
+                double[] rndNums = RandomSeq.GenerateRandomSequence(20, 0.0, 10.0);
 
                 for (int i = 0; i < rndNums.Length; i++)
                 {
                     Console.WriteLine(rndNums[i]);
                 }
+                Console.WriteLine("Average of rndNums is " + Average.GetAverage(rndNums).ToString());
             }
             catch (Exception e)
             {
